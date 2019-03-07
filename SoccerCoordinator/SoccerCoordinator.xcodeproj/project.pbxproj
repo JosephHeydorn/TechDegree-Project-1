@@ -8,7 +8,7 @@
 
 /* Begin PBXFileReference section */
 		3A3F58431FD190C600B8D84B /* SoccerCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SoccerCoordinator.app; path = "/Users/joey/Documents/GitHub/TechDegree-Project-1/SoccerCoordinator/build/Debug-iphoneos/SoccerCoordinator.app"; sourceTree = "<absolute>"; };
-		D4C5059F2230C9860074A8B5 /* Unit_1_MainFile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Unit_1_MainFile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4C5059F2230C9860074A8B5 /* Unit_1_MainFile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Unit_1_MainFile.playground; path = ../Unit_1_MainFile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

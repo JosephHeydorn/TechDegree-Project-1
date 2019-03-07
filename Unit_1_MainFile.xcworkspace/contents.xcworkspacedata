@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SoccerCoordinator/../Unit_1_MainFile.playground">
+   </FileRef>
+   <FileRef
+      location = "container:SoccerCoordinator/SoccerCoordinator.xcodeproj">
+   </FileRef>
+</Workspace>
