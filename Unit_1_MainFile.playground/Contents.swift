@@ -18,7 +18,7 @@ let player16: [String: String] = ["name": "Phillip Helm", "height": "44", "exper
 let player17: [String: String] = ["name": "Les Clay", "height": "42", "experience": "True", "guardian": "Wynonna Brown,"]
 let player18: [String: String] = ["name": "Herschel Krustofski", "height": "45", "experience": "True", "guardian": "Hyman and Rachel Krustofski,"]
 //The base league of all collected players
-var theLeague: [[String: String]] = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16, player17, player18]
+var players: [[String: String]] = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16, player17, player18]
 //Player Skill Level
 var experincedPlayers: [[String: String]] = []
 var nonExperincedPlayers: [[String: String]] = []
@@ -27,7 +27,7 @@ var teamDragons: [[String: String]] = []
 var teamSharks: [[String: String]] = []
 var teamRaptors: [[String: String]] = []
 //Evaluating all the player skill level
-for eachPlayer in theLeague{
+for eachPlayer in players{
     for (_, value) in eachPlayer{
         switch (value) {
         case "True": experincedPlayers.append(eachPlayer)
@@ -55,14 +55,22 @@ for eachPlayer in nonExperincedPlayers {
         teamRaptors.append(eachPlayer)
     }
 }
-//Personalized Letter for Each Team
+//Personalized Letter for Each Team Grouped up into one variable
+var letters: [String] = []
 for eachPlayer in teamDragons {
-    print("Dear", eachPlayer["guardian"]!, "\nYour Child", eachPlayer["name"]!, "has been selected to play for the Dragons on March 17th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n" )
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Dragons on March 17th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
+    letters.append(letter)
+    
 }
 for eachPlayer in teamSharks {
-    print("Dear", eachPlayer["guardian"]!, "\nYour Child", eachPlayer["name"]!, "has been selected to play for the Sharks on March 17th at 3PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 2:30PM, and will close at the end of game.\n" )
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Sharks on March 17th at 3PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 2:30PM, and will close at the end of game.\n"
+    letters.append(letter)
 }
 for eachPlayer in teamRaptors {
-    print("Dear", eachPlayer["guardian"]!, "\nYour Child", eachPlayer["name"]!, "has been selected to play for the Raptors on March 18th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n" )
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Raptors on March 18th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
+    letters.append(letter)
 }
-
+//Final message to print the letters
+for message in letters {
+print(message)
+}
