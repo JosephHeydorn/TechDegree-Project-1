@@ -58,16 +58,16 @@ for eachPlayer in nonExperincedPlayers {
 //Personalized Letter for Each Team Grouped up into one variable
 var letters: [String] = []
 for eachPlayer in teamDragons {
-    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Dragons on March 17th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child " + eachPlayer["name"]! + " has been selected to play for the Dragons on March 17th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
     letters.append(letter)
     
 }
 for eachPlayer in teamSharks {
-    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Sharks on March 17th at 3PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 2:30PM, and will close at the end of game.\n"
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child " + eachPlayer["name"]! + " has been selected to play for the Sharks on March 17th at 3PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 2:30PM, and will close at the end of game.\n"
     letters.append(letter)
 }
 for eachPlayer in teamRaptors {
-    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child" + eachPlayer["name"]! + "has been selected to play for the Raptors on March 18th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
+    let letter = "Dear " + eachPlayer["guardian"]! + "\nYour Child " + eachPlayer["name"]! + " has been selected to play for the Raptors on March 18th at 1PM! Feel free to come early to get a little extra practice in. The snack booth will be open from 12:30PM, and will close at the end of game.\n"
     letters.append(letter)
 }
 //Final message to print the letters
